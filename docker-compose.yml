@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  intellij:
+    image: jcdubs/intellij
+    container_name: intellij
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ~/docker-share:/home/developer
